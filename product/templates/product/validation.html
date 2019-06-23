@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% load static %}
+
+
+{% block header %}
+    <div class="result">
+
+    {% if result %}
+        <div class="text-center">
+            <h1>Ce produit a bien été sauvegardé</h1>
+        </div>
+
+
+    {% else %}
+        <div class="text-center">
+            <h1>Ce produit a déja été sauvegardé</h1>
+        </div>
+{% endif %}
+
+
+
+</div>
+{% endblock%}
